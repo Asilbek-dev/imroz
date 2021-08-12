@@ -1,0 +1,106 @@
+#brand {
+    background: #191919;
+    padding: 100px 0;
+    .brand_theme {
+        p:nth-child(1) {
+            color: #fff;
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: .5px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, #fd4766 79.69%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        p:nth-child(2) {
+            font-size: 50px;
+            line-height: 62px;
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0;
+        align-items: center;
+        .nav-item {
+            width: 20%;
+            cursor: pointer;
+            .nav-link {
+                padding: 25px;
+                overflow: hidden;
+                text-align: center;
+                img {
+                    width: 150px;
+                    filter: grayscale(1);
+                    opacity: .8;
+                    transition: .3s;
+                }
+            }
+            .nav-link:hover{
+                img {
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    #brand {
+        .nav {
+            .nav-item {
+                width: 25%;
+                .nav-link {
+                    padding: 0;
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 676px) {
+    #brand {
+        padding: 20px 0;
+        .brand_theme {
+            p:nth-child(2) {
+                font-size: 28px;
+                line-height: 30px;
+            }
+        }
+        .nav {
+            .nav-item {
+                width: 33.3333%;
+                .nav-link {
+                    padding: 0;
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 492px) {
+    #brand {
+        .nav {
+            .nav-item {
+                width: 33.3333%;
+                .nav-link {
+                    padding: 0;
+                    img {
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./Components/about";
+import Brands from "./Components/brands";
+import Footer from "./Components/footer";
+import Header from "./Components/header";
+import News from "./Components/news";
+import OurCompany from "./Components/ourCompany";
+import OurWork from "./Components/ourWork";
+import People from "./Components/people";
+import Service from "./Components/service";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      {/* Refreshingly Unique Company About. */}
+      <About/>
+      {/* Services provide for you. */}
+      <Service/>
+      {/* Some of our Recent Works */}
+      <OurWork/>
+      {/* Our Company Growth */}
+      <OurCompany/>
+      {/* Afifa Sampa The standard chunk of */}
+      <People/>
+      {/* Latest News */}
+      <News/>
+      {/* We worked with brands. */}
+      <Brands/>
+      <Footer/>
+    </>
   );
 }
 
